@@ -1,0 +1,15 @@
+/* Flex */
+
+.flex-row {
+    display: flex;
+}
+
+/* Font */
+
+.lucida-font {
+    font-family: 'Lucida Sans';
+}
+
+.price {
+    color: #495057;
+}
