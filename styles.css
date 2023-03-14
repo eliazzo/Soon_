@@ -1,15 +1,102 @@
+
+/* CSS Primitives */
 /* Flex */
 
 .flex-row {
     display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.space-even {
+    justify-content: space-between;
+}
+.justify-left {
+    justify-content: left;
+}
+.justify-right {
+    justify-content: right;
 }
 
 /* Font */
 
 .lucida-font {
-    font-family: 'Lucida Sans';
+    font-family: 'arial';
+}
+.grey {
+    color: #9a9ea2;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text-xs {
+    font-size: x-small;
 }
 
-.price {
-    color: #495057;
+
+
+/* Vertical spacing */
+
+.stack-xl {
+    margin-top: 6rem;
+}
+.stack-l {
+    margin-top: 4rem;
+}
+.stack-m {
+    margin-top: 2rem;
+}
+.stack-s {
+    margin-top: 1rem;
+}
+
+
+
+/* Other */
+.m-left {
+    margin-left: 1rem;
+}
+.m-right {
+    margin-right: 1rem;
+}
+.blue-circle {
+    color: white;
+    background-color: #3f51b5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.blue-long {
+    color: white;
+    background-color: #3f51b5;
+    width: 150px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+}
+.blue-circle-border {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #3f51b5;
+    background-color: transparent;
+}
+.fix-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-col {
+        display: flex;
+        /* flex-direction: row; */
+    }
 }
