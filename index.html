@@ -7,8 +7,8 @@
     <title>Soon_</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="margin">
-    <nav class="flex-row fix-nav lucida-font space-even margin">
+  <body>
+    <nav class="flex-row fix-nav lucida-font space-even">
       <div class="flex-row m-left">
         <h1 class="grey uppercase">soon_</h1>
         <h2>Basket App</h2>
@@ -17,32 +17,52 @@
         class="flex-row m-right center space-even m-right"
         style="width: 5rem"
       >
-        <a href="">cart</a>
+        <a id="cart" href="">cart</a>
         <output id="basket-count" class="flex-row center blue-circle">0</output>
       </div>
     </nav>
+
+    <div id="basket" class="curtain flex-col center lucida-font" style="color:black">
+      <h2>Basket</h2>
+      <div class="flex-col-sp center basket-space">
+        <img 
+          src="IMG_20221019_141930.jpg"
+          width="339px"
+          height="423px"
+          alt="sheep dog"
+          />
+        <p>Haxed wotton jooded cacket</p>
+        <p id="product-price" class="grey"></p>
+        <p>Total before shipping</p>
+        <p id="basket-sum">£</p>
+      </div>
+
+    </div>
+
     <hr class="stack-xl" />
 
-    <div class="stack-l center flex-col space-even">
-      <div>
+    <div class="stack-l center flex-col-sp space-even"> 
+      <!-- IMG container -->
+      <div class="flex-1 m-left m-right center-text">
         <img
-          src="/IMG_20221019_141930.jpg"
+          src="IMG_20221019_141930.jpg"
           width="339px"
           height="423px"
           alt="sheep dog"
         />
       </div>
-      <div class="lucida-font stack-m flex-col m-left">
+      <!-- Text container -->
+      <div class="lucida-font stack-m flex-col m-left m-right flex-1">
         <h3>Haxed wotton jooded cacket</h3>
         <p id="product-info"></p>
         <p id="product-price" class="grey"></p>
         <p class="grey text-xs uppercase">10 in stock</p>
 
-        <form class="flex-row space-even stack-s" style="width: 150px">
+        <div class="flex-row space-even stack-s center" style="width: 150px">
           <button id="decrease" class="blue-circle-border">-</button>
           <label id="item-count">0</label>
           <button id="increase" class="blue-circle-border">+</button>
-        </form>
+        </div>
 
         <button id="basket-btn" class="blue-long uppercase stack-s">
           Add to basket
