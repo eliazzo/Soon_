@@ -1,102 +1,141 @@
 
 /* CSS Primitives */
 /* Flex */
-
 .flex-row {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .flex-col {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+.flex-col-sp {
+	display: flex;
+	flex-direction: column; 
 }
 .center {
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+.center-text {
+	text-align: center;
 }
 .space-even {
-    justify-content: space-between;
+	justify-content: space-between;
+}
+.flex-1 {
+	flex: 1;
 }
 .justify-left {
-    justify-content: left;
+	justify-content: left;
 }
 .justify-right {
-    justify-content: right;
+	justify-content: right;
 }
 
 /* Font */
-
 .lucida-font {
-    font-family: 'arial';
+	font-family: sans-serif;
 }
 .grey {
-    color: #9a9ea2;
+	color: #9a9ea2;
 }
 .uppercase {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
+.text-
 .text-xs {
-    font-size: x-small;
+	font-size: x-small;
 }
-
 
 
 /* Vertical spacing */
-
 .stack-xl {
-    margin-top: 6rem;
+	margin-top: 6rem;
 }
 .stack-l {
-    margin-top: 4rem;
+	margin-top: 4rem;
 }
 .stack-m {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 .stack-s {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 
-
-/* Other */
+/* Margin */
 .m-left {
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 .m-right {
-    margin-right: 1rem;
-}
-.blue-circle {
-    color: white;
-    background-color: #3f51b5;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.blue-long {
-    color: white;
-    background-color: #3f51b5;
-    width: 150px;
-    height: 30px;
-    border-radius: 40px;
-    border: none;
-}
-.blue-circle-border {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #3f51b5;
-    background-color: transparent;
-}
-.fix-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
+	margin-right: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
-    .flex-col {
-        display: flex;
-        /* flex-direction: row; */
-    }
+/* Button */
+.blue-circle {
+	color: white;
+	background-color: #3f51b5;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 }
+.blue-long {
+	color: white;
+	background-color: #3f51b5;
+	width: 150px;
+	height: 30px;
+	border-radius: 40px;
+	border: none;
+}
+.blue-circle-border {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #3f51b5;
+	background-color: transparent;
+}
+
+/* Nav */
+.fix-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+}
+
+/* Basket curtain */
+
+.curtain {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background: white;
+	/* opacity: 0.8; */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s;
+}
+
+/* Web view */
+@media only screen and (min-width: 768px) {
+	.flex-col-sp {
+			display: flex;
+			flex-direction: row;
+	}
+	.m-left {
+			margin-left: 4rem;
+	}
+	.m-right {
+			margin-right: 4rem;
+	}
+}
+
+/* .curtain-list {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  margin-top: 30px;
+ } /* 30px top margin to avoid conflict with the close button on smaller scr */
