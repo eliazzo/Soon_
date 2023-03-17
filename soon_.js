@@ -18,15 +18,26 @@ appendProductText();
 
 // End
 
-function removeAlert() {
+function removeAlertOne() {
   document.querySelector('#basket-btn').style.backgroundColor = '#3f51b5';
-}
+};
 
-function blueAlert() {
+function removeAlertTwo() {
+  document.querySelector('#alert-two').style.backgroundColor = 'transparent';
+};
+
+function alertOne() {
   document.querySelector('#basket-btn').style.backgroundColor = '#E0FFFF';
   // document.querySelector('#basket-btn').style.border = '#00CED1';
-  setTimeout(() => removeAlert(), 500);
-}
+  setTimeout(() => removeAlertOne(), 500);
+};
+
+function alertTwo() {
+  document.querySelector('#alert-two').style.backgroundColor = '#E0FFFF';
+  setTimeout(() => removeAlertTwo(), 500);
+};
+
+
 
 function increaseItem() {
   if (itemCount < 3){
@@ -34,7 +45,7 @@ function increaseItem() {
   const countDisplay = document.querySelector('#item-count');
   countDisplay.innerText = itemCount;
 }
-else blueAlert();
+else alertOne();
 }
 
 function decreaseItem() {
@@ -51,6 +62,7 @@ function addToBasket() {
   const basketCount = document.querySelector('#basket-count');
   const countDisplay = document.querySelector('#item-count');
   basketCount.innerText = countDisplay.innerText;
+  alertTwo()
 }
 
 function basketTotal() {
