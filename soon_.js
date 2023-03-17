@@ -101,6 +101,7 @@ function appendItemToBasket() {
   `
 }
 
+// Basket functions
 function viewBasket() {
   document.getElementById('basket').classList.add('curtain-width');
   appendItemToBasket();
@@ -111,6 +112,7 @@ function viewBasket() {
 function closeBasket() {
   document.getElementById('basket').classList.remove('curtain-width');
 }
+// End
 
 // Event Listeners
 document.getElementById('increase').addEventListener('click', increaseItem);
