@@ -11,7 +11,7 @@ function appendProductName() {
 
 appendProductName()
 
-function appendProductPrice() {
+function appendProductPrice() { 
   const price = '£' + productPrice;
   document.getElementById('product-price').innerText = price;
 };
@@ -50,7 +50,7 @@ function alertTwo() {
 function increaseItem() {
   if (itemCount < 3){
   itemCount++;
-  const countDisplay = document.querySelector('#item-count');
+  const countDisplay = document.getElementById('item-count');
   countDisplay.innerText = itemCount;
 }
   else alertOne();
@@ -60,27 +60,27 @@ function decreaseItem() {
   if (itemCount > 0) { 
     itemCount--;
   }
-  const countDisplay = document.querySelector('#item-count');
+  const countDisplay = document.getElementById('item-count');
   countDisplay.innerText = itemCount;
 };
 
 function addToBasket() {
-  const basketCount = document.querySelector('#basket-count');
-  const countDisplay = document.querySelector('#item-count');
+  const basketCount = document.getElementById('basket-count');
+  const countDisplay = document.getElementById('item-count');
   basketCount.innerText = countDisplay.innerText;
   alertTwo();
 };
 
 function basketTotal() {
-  const displayBasketSum = document.querySelector('#basket-sum');
-  const basketCount = document.querySelector('#basket-count').innerText;
+  const displayBasketSum = document.getElementById('basket-sum');
+  const basketCount = document.getElementById('basket-count').innerText;
   const basketSum = '£' + Number(basketCount) * productPrice;
   displayBasketSum.innerText = basketSum;
 };
 
 function appendItemToBasket() {
   const basketContent = document.getElementById('basket-contents');
-  const basketCount = document.querySelector('#basket-count').innerText;
+  const basketCount = document.getElementById('basket-count').innerText;
   if (basketCount !== '0') {
   basketContent.innerHTML = `
     <img 
@@ -102,14 +102,14 @@ function appendItemToBasket() {
 }
 
 function viewBasket() {
-  document.getElementById("basket").classList.add('curtain-width');
+  document.getElementById('basket').classList.add('curtain-width');
   appendItemToBasket();
   appendProductPrice();
   basketTotal();
 }
 
 function closeBasket() {
-  document.getElementById("basket").classList.remove('curtain-width');
+  document.getElementById('basket').classList.remove('curtain-width');
 }
 
 // Event Listeners
