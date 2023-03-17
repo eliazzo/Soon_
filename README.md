@@ -20,17 +20,17 @@ Clone the repo using the following command:
 ### Process
 
 #### Mobile-first
-The Figma demonstration shows a desktop view of the website page. However, given that most real life scenarios use a mobile-first approach I opted for this approach.
+The Figma demonstration shows a desktop view of the website page. However, given that most real life scenarios use a mobile-first approach I opted to follow this method.
 
 #### Alert notice
 
-The Alert functions are designed to guide the user through the page. For example, when you have opted to add the maximum number of items to the bag, it will guide you to the 'Add to basket' button.
+The Alert functions are designed to guide the user through the page. For example, when you have opted to add the maximum number of items to the bag, it will guide you to the 'Add to basket' button through a brief change of the CSS properties.
 
 *This is not a feature I would include in a real-life scenario but was intended to clarify the user flow for the purpose of this exercise!*
 
 #### Sliding basket
 
-The challenge instructions clearly stated that we do not attempt to complete all the user flows. However, after looking at the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/dalton-beige-wool-cashmere-pea-coat-gm-1075f-16713341?StoreId=10658) I was interested in the sliding basket and keen to integrate this into my project.
+The challenge instructions clearly stated that we do not attempt to complete all the user flows. However, after looking at the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794) I was interested in the sliding basket and keen to integrate this into my project.
 
 Users can:
 - Click the basket icon to slide the 'curtain' basket into view
