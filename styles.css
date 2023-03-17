@@ -43,7 +43,7 @@
 .uppercase {
 	text-transform: uppercase;
 }
-.text-
+
 .text-xs {
 	font-size: x-small;
 }
@@ -94,6 +94,16 @@
 	border-radius: 50%;
 	border: 1px solid #3f51b5;
 	background-color: transparent;
+}
+#basket .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+
+}
+#basket a {
+	text-decoration: none;
 }
 
 /* Nav */
