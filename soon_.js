@@ -2,37 +2,46 @@
 let itemCount = 0;
 let productPrice = 650;
 let productText;
+let productName = 'Haxed wotton jooded cacket';
 
 // Add product information
+function appendProductName() {
+  document.getElementById('product-name').innerText = productName;
+};
+
+appendProductName()
+
 function appendProductPrice() {
   const price = '£' + productPrice;
-  document.querySelector('#product-price').innerText = price;
-}
+  document.getElementById('product-price').innerText = price;
+};
+
 appendProductPrice(); 
 
 function appendProductText() {
   productText = 'The challenge is designed to demonstrate your knowledge and experience of frontend web development. Feel free to complete the challenge using the tools and technologies you’re most comfortable with, we will expect to see use of HTML / CSS and some JS. A Figma file will be provided alongside the challenge which should be used to inform the visual aspect of the UI.'
-  document.querySelector('#product-info').innerText = productText;
-}
+  document.getElementById('product-info').innerText = productText;
+};
+
 appendProductText(); 
 // End
 
 // Alert functions
 function removeAlertOne() {
-  document.querySelector('#basket-btn').style.backgroundColor = '#3f51b5';
+  document.querySelector('.alert-one').style.backgroundColor = '#3f51b5';
 };
 
 function removeAlertTwo() {
-  document.querySelector('#alert-two').style.backgroundColor = 'transparent';
+  document.querySelector('.alert-two').style.backgroundColor = 'transparent';
 };
 
 function alertOne() {
-  document.querySelector('#basket-btn').style.backgroundColor = '#E0FFFF';
+  document.querySelector('.alert-one').style.backgroundColor = '#E0FFFF';
   setTimeout(() => removeAlertOne(), 500);
 };
 
 function alertTwo() {
-  document.querySelector('#alert-two').style.backgroundColor = '#E0FFFF';
+  document.querySelector('.alert-two').style.backgroundColor = '#E0FFFF';
   setTimeout(() => removeAlertTwo(), 500);
 };
 // End
@@ -45,7 +54,7 @@ function increaseItem() {
   countDisplay.innerText = itemCount;
 }
   else alertOne();
-}
+};
 
 function decreaseItem() {
   if (itemCount > 0) { 
@@ -53,21 +62,21 @@ function decreaseItem() {
   }
   const countDisplay = document.querySelector('#item-count');
   countDisplay.innerText = itemCount;
-}
+};
 
 function addToBasket() {
   const basketCount = document.querySelector('#basket-count');
   const countDisplay = document.querySelector('#item-count');
   basketCount.innerText = countDisplay.innerText;
-  alertTwo()
-}
+  alertTwo();
+};
 
 function basketTotal() {
-  const displayBasketSum = document.getElementById('basket-sum');
+  const displayBasketSum = document.querySelector('#basket-sum');
   const basketCount = document.querySelector('#basket-count').innerText;
   const basketSum = '£' + Number(basketCount) * productPrice;
   displayBasketSum.innerText = basketSum;
-}
+};
 
 function appendItemToBasket() {
   const basketContent = document.getElementById('basket-contents');
@@ -104,13 +113,13 @@ function closeBasket() {
 }
 
 // Event Listeners
-document.querySelector('#increase').addEventListener('click', increaseItem);
+document.getElementById('increase').addEventListener('click', increaseItem);
 
-document.querySelector('#decrease').addEventListener('click', decreaseItem);
+document.getElementById('decrease').addEventListener('click', decreaseItem);
 
-document.querySelector('#basket-btn').addEventListener('click', addToBasket)
+document.getElementById('basket-btn').addEventListener('click', addToBasket)
 
-document.querySelector('#cart').addEventListener("click", viewBasket);
+document.getElementById('cart').addEventListener("click", viewBasket);
 
 document.querySelector('.closebtn').addEventListener("click", closeBasket);
 // End
