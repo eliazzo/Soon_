@@ -3,7 +3,7 @@ let itemCount = 0;
 let productPrice = 650;
 let productText;
 
-// Product information on page load
+// Add product information
 function appendProductPrice() {
   const price = '£' + productPrice;
   document.querySelector('#product-price').innerText = price;
@@ -15,9 +15,9 @@ function appendProductText() {
   document.querySelector('#product-info').innerText = productText;
 }
 appendProductText(); 
-
 // End
 
+// Alert functions
 function removeAlertOne() {
   document.querySelector('#basket-btn').style.backgroundColor = '#3f51b5';
 };
@@ -28,7 +28,6 @@ function removeAlertTwo() {
 
 function alertOne() {
   document.querySelector('#basket-btn').style.backgroundColor = '#E0FFFF';
-  // document.querySelector('#basket-btn').style.border = '#00CED1';
   setTimeout(() => removeAlertOne(), 500);
 };
 
@@ -36,7 +35,7 @@ function alertTwo() {
   document.querySelector('#alert-two').style.backgroundColor = '#E0FFFF';
   setTimeout(() => removeAlertTwo(), 500);
 };
-
+// End
 
 
 function increaseItem() {
@@ -45,7 +44,7 @@ function increaseItem() {
   const countDisplay = document.querySelector('#item-count');
   countDisplay.innerText = itemCount;
 }
-else alertOne();
+  else alertOne();
 }
 
 function decreaseItem() {
@@ -55,8 +54,6 @@ function decreaseItem() {
   const countDisplay = document.querySelector('#item-count');
   countDisplay.innerText = itemCount;
 }
-
-
 
 function addToBasket() {
   const basketCount = document.querySelector('#basket-count');
@@ -95,25 +92,28 @@ function appendItemToBasket() {
   `
 }
 
-
-
-function viewBasket () {
+function viewBasket() {
   document.getElementById("basket").classList.add('curtain-width');
   appendItemToBasket();
   appendProductPrice();
   basketTotal();
 }
 
+function closeBasket() {
+  document.getElementById("basket").classList.remove('curtain-width');
+}
 
 // Event Listeners
-document.querySelector('#basket-btn').addEventListener('click', addToBasket)
-
-document.querySelector('#cart').addEventListener("click", viewBasket);
-
 document.querySelector('#increase').addEventListener('click', increaseItem);
 
 document.querySelector('#decrease').addEventListener('click', decreaseItem);
 
+document.querySelector('#basket-btn').addEventListener('click', addToBasket)
+
+document.querySelector('#cart').addEventListener("click", viewBasket);
+
+document.querySelector('.closebtn').addEventListener("click", closeBasket);
+// End
 
 
 
