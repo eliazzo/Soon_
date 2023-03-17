@@ -101,7 +101,7 @@ function appendItemToBasket() {
   `
 }
 
-// Basket functions
+// Sliding basket functions
 function viewBasket() {
   document.getElementById('basket').classList.add('curtain-width');
   appendItemToBasket();
