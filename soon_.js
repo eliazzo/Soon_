@@ -1,6 +1,6 @@
 // Global variables
 let itemCount = 0;
-let productPrice = '650.00';
+let productPrice = 650;
 let productText = "The Drumming jacket in orange is finished with a water-repellent dry wax treatment that creates a love-worn look. It's made in the United Kingdom using organic cotton ripstop with a drawstring hood, underarm eyelets and buttoned flap front pockets. Shoulder epaulettes add a utilitarian twist, while a fly-fronted zip and snap-button closure keeps the overall look streamlined. Attach one of the collection's padded liners to the internal tab on cooler days.";
 let productName = 'Haxed wotton jooded cacket';
 
@@ -12,7 +12,7 @@ function appendProductName() {
 appendProductName()
 
 function appendProductPrice() { 
-  const price = '£' + productPrice;
+  const price = '£' + productPrice.toFixed(2);
   document.getElementById('product-price').innerText = price;
 };
 
@@ -67,14 +67,15 @@ function addToBasket() {
   const basketCount = document.getElementById('basket-count');
   const countDisplay = document.getElementById('item-count');
   basketCount.innerText = countDisplay.innerText;
+  basketCount.style.backgroundColor = "#3f51b5";
   alertTwo();
 };
 
 function basketTotal() {
   const displayBasketSum = document.getElementById('basket-sum');
   const basketCount = document.getElementById('basket-count').innerText;
-  const basketSum = '£' + Number(basketCount) * productPrice;
-  displayBasketSum.innerText = basketSum;
+  const basketSum = Number(basketCount) * productPrice;
+  displayBasketSum.innerText = '£' + basketSum.toFixed(2);
 };
 
 function appendItemToBasket() {
@@ -88,10 +89,16 @@ function appendItemToBasket() {
       height="423px"
       alt="Drumming wax coat"
       />
+    
     <p>Haxed wotton jooded cacket</p>
-    <p id="product-price" class="grey"></p> x ${basketCount}
-    <p>Total</p>
-    <p id="basket-sum">£</p>
+    <div class="flex-row space-even text-width">
+      <p id="product-price"></p> 
+      <p>${basketCount}</p>
+    </div>
+    <div class="flex-row space-even text-width">
+      <p>Total</p>
+      <p id="basket-sum"></p>
+    </div>
     `
   }
   else basketContent.innerHTML = `

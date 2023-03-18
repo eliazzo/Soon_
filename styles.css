@@ -51,6 +51,9 @@ h1, h2, h3 {
 .text-xs {
 	font-size: x-small;
 }
+.text-s {
+	font-size: small;
+}
 .text-l {
 	font-size: 1.8rem;
 }
@@ -85,8 +88,8 @@ h1, h2, h3 {
 .blue-circle {
 	color: white;
 	background-color: #3f51b5;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 }
 .blue-long {
@@ -134,11 +137,12 @@ h1, h2, h3 {
 	overflow-x: hidden;
 	transition: 0.5s;
 }
-
 .curtain-width {
 	width: 100%;
 }
-
+.text-width {
+	width: 80%;
+}
 .basket-space {
 	width: 100vw;
 	justify-content: space-evenly;
@@ -161,6 +165,9 @@ h1, h2, h3 {
 	}
 	.curtain-width {
 		width: 50%;
+	}
+	.text-width {
+		width: 25%;
 	}
 	#main-img img {
 		width: 587px;
