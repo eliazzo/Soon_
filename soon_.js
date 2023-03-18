@@ -84,7 +84,7 @@ function appendItemToBasket() {
   if (basketCount !== '0') {
   basketContent.innerHTML = `
     <img 
-      src="Drumming.webp"
+      src="Img/Drumming.webp"
       width="339px"
       height="423px"
       alt="Drumming wax coat"
@@ -106,6 +106,7 @@ function appendItemToBasket() {
     <p id="basket-sum">£</p>
   `
 }
+console.log(productPrice)
 
 // Sliding basket functions
 function viewBasket() {
