@@ -84,10 +84,10 @@ function appendItemToBasket() {
   if (basketCount !== '0') {
   basketContent.innerHTML = `
     <img 
-      src="IMG_20221019_141930.jpg"
+      src="Drumming.webp"
       width="339px"
       height="423px"
-      alt="sheep dog"
+      alt="Drumming wax coat"
       />
     <p>Haxed wotton jooded cacket</p>
     <p id="product-price" class="grey"></p> x ${basketCount}
