@@ -1,7 +1,7 @@
 // Global variables
 let itemCount = 0;
-let productPrice = 650;
-let productText;
+let productPrice = '650.00';
+let productText = "The Drumming jacket in orange is finished with a water-repellent dry wax treatment that creates a love-worn look. It's made in the United Kingdom using organic cotton ripstop with a drawstring hood, underarm eyelets and buttoned flap front pockets. Shoulder epaulettes add a utilitarian twist, while a fly-fronted zip and snap-button closure keeps the overall look streamlined. Attach one of the collection's padded liners to the internal tab on cooler days.";
 let productName = 'Haxed wotton jooded cacket';
 
 // Add product information
@@ -19,7 +19,6 @@ function appendProductPrice() {
 appendProductPrice(); 
 
 function appendProductText() {
-  productText = 'The challenge is designed to demonstrate your knowledge and experience of frontend web development. Feel free to complete the challenge using the tools and technologies you’re most comfortable with, we will expect to see use of HTML / CSS and some JS. A Figma file will be provided alongside the challenge which should be used to inform the visual aspect of the UI.'
   document.getElementById('product-info').innerText = productText;
 };
 
@@ -84,10 +83,10 @@ function appendItemToBasket() {
   if (basketCount !== '0') {
   basketContent.innerHTML = `
     <img 
-      src="IMG_20221019_141930.jpg"
+      src="Drumming.webp"
       width="339px"
       height="423px"
-      alt="sheep dog"
+      alt="Drumming wax coat"
       />
     <p>Haxed wotton jooded cacket</p>
     <p id="product-price" class="grey"></p> x ${basketCount}

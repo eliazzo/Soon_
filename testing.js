@@ -61,7 +61,7 @@ test("View the total price in my basket", () => {
   // Reverse test
   closeBasket();
   decreaseItem();
-  addToBasket;
+  addToBasket();
 })
 
 

@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soon_</title>
+    <title>Soon_ Basket App user flow</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Basket -->
-    <div id="basket" class="curtain flex-col center lucida-font">
+    <div id="basket" class="curtain flex-col center sans-font">
       <a href="javascript:void(0)" class="closebtn grey">&times;</a>
-      <h2>Basket</h2>
-      <div id="basket-contents" class="flex-col center basket-space">
-        <!-- Insert product informatio from js -->
-      </div>
+      <h2 class="stack-xl">Basket</h2>
+      <div id="basket-contents" class="flex-col center basket-space"></div>
     </div>
-    <!-- Nav bar -->
-    <nav class="flex-row fix-nav lucida-font space-even">
+
+    <nav class="flex-row fix-nav space-even sans-font">
       <div class="flex-row m-left">
         <h1 class="grey uppercase">soon_</h1>
         <h2>Basket App</h2>
@@ -33,29 +30,25 @@
 
     <hr class="stack-xl" />
 
-    <div class="stack-l center flex-col-sp space-even">
-      <!-- IMG container -->
-      <div class="flex-1 m-left m-right center-text">
+    <div class="stack-l flex-col-sp space-even sans-font">
+      <div id="main-img" class="flex-1 m-left m-right center-text">
         <img
-          src="IMG_20221019_141930.jpg"
+          src="Drumming.webp"
           width="339px"
           height="423px"
-          alt="sheep dog"
+          alt="Drumming wax coat"
         />
       </div>
-      <!-- Text container -->
-      <div class="lucida-font stack-m flex-col m-left m-right flex-1">
-        <h3 id="product-name"></h3>
+      <div class="flex-col m-left m-right flex-1">
+        <h3 id="product-name" class="text-l stack-none"></h3>
         <p id="product-info"></p>
-        <p id="product-price" class="grey"></p>
+        <p id="product-price"></p>
         <p class="grey text-xs uppercase">10 in stock</p>
-
         <div class="flex-row space-even stack-s center" style="width: 150px">
           <button id="decrease" class="blue-circle-border">-</button>
           <label id="item-count">0</label>
           <button id="increase" class="blue-circle-border">+</button>
         </div>
-
         <button id="basket-btn" class="blue-long uppercase stack-s alert-one">
           Add to basket
         </button>
