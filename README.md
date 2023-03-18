@@ -19,25 +19,23 @@ Clone the repo using the following command:
 
 ### Process
 
+#### Global variables
+I intentionally avoided hard coding product information onto the HTML and created the global variables ``productPrice``, ``productText`` and ``productName`` to act as parameters for the data. In what I appreciate is an enormously simplified version of the real thing, the idea was to maintain the possibility for alternative product information to be applied via the javascript file alone.
+
 #### Mobile-first
-The Figma demonstration shows a desktop view of the website page. However, given that most real life scenarios use a mobile-first approach I opted to follow this method.
+The Figma prototype shows a desktop view of the website page. However, I opted to follow a mobile-first approach given that this is the typical approach in most scenarios.
 
 #### Alert notice
 
-The Alert functions are designed to guide the user through the page. For example, when you have opted to add the maximum number of items to the bag, it will guide you to the 'Add to basket' button through a brief change of the CSS properties.
-
-*This is not a feature I would include in a real-life scenario but was intended to clarify the user flow for the purpose of this exercise!*
+The alert functions are designed to guide reviewers through the page. For example, when you have opted to add the maximum number of items to the bag, it will guide you to the 'Add to basket' button with a brief change of the CSS properties. *This is not a feature I would include in a real-life shopping app but was intended to clarify the user flow for the purpose of this exercise!*
 
 #### Sliding basket
 
 The challenge instructions clearly stated that we do not attempt to complete all the user flows. However, after looking at the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794) I was interested in the sliding basket and keen to integrate this into my project.
 
-Users can:
-- Click the basket icon to slide the 'curtain' basket into view
-- View information about the items in the bag
-- View the number of items added to the bag
-- View the total cost of the items in the bag
+#### Fixed nav
 
+Similarly, I chose to recreate the fixed navigation bar that appears on the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794).
 
 ### Testing
 
