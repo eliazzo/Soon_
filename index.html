@@ -7,16 +7,13 @@
     <title>Soon_ Basket App user flow</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="sans-font">
-    <!-- Basket -->
-    <div id="basket" class="curtain flex-col center">
+  <body>
+    <div id="basket" class="curtain flex-col center sans-font">
       <a href="javascript:void(0)" class="closebtn grey">&times;</a>
-      <h2>Basket</h2>
-      <div id="basket-contents" class="flex-col center basket-space">
-        <!-- Insert product informatio from js -->
-      </div>
+      <h2 class="stack-xl">Basket</h2>
+      <div id="basket-contents" class="flex-col center basket-space"></div>
     </div>
-    <!-- Nav bar -->
+
     <nav class="flex-row fix-nav space-even sans-font">
       <div class="flex-row m-left">
         <h1 class="grey uppercase">soon_</h1>
@@ -33,27 +30,25 @@
 
     <hr class="stack-xl" />
 
-    <div class="stack-l center flex-col-sp space-even">
-      <div class="flex-1 m-left m-right center-text">
+    <div class="stack-l flex-col-sp space-even sans-font">
+      <div id="main-img" class="flex-1 m-left m-right center-text">
         <img
           src="Drumming.webp"
-          width="587px"
-          height="784px"
+          width="339px"
+          height="423px"
           alt="Drumming wax coat"
         />
       </div>
-      <div class="stack-m flex-col m-left m-right flex-1">
-        <h3 id="product-name" class="text-l"></h3>
+      <div class="flex-col m-left m-right flex-1">
+        <h3 id="product-name" class="text-l stack-none"></h3>
         <p id="product-info"></p>
-        <p id="product-price" class="grey"></p>
+        <p id="product-price"></p>
         <p class="grey text-xs uppercase">10 in stock</p>
-
         <div class="flex-row space-even stack-s center" style="width: 150px">
           <button id="decrease" class="blue-circle-border">-</button>
           <label id="item-count">0</label>
           <button id="increase" class="blue-circle-border">+</button>
         </div>
-
         <button id="basket-btn" class="blue-long uppercase stack-s alert-one">
           Add to basket
         </button>
