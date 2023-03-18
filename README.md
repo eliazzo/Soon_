@@ -11,7 +11,7 @@ As a user, I want to:
 * View the total number of items in my basket
 * View the total price in my basket
 
-#### Instructions for reviewing the code
+#### Instructions for reviewing
 
 Clone the repo using the following command: 
 
@@ -40,5 +40,9 @@ Similarly, I chose to recreate the fixed navigation bar that appears on the [Mac
 ### Testing
 
 A testing library was developed to test that each user story is met. Test results are shown in the console.
+
+### GitHub Projects
+
+Check out my [GitHub Project](https://github.com/users/eliazzo/projects/2) which illustrates my workflow.
 
 
