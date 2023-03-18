@@ -57,11 +57,13 @@ test("View the total price in my basket", () => {
   viewBasket();
   // Test output is as expected
   actual = document.getElementById('basket-sum').innerText;
-  equal(actual, '£650');
+  equal(actual, '£650.00');
   // Reverse test
   closeBasket();
   decreaseItem();
   addToBasket();
+  const basketCount = document.getElementById('basket-count');
+  basketCount.style.backgroundColor = "#C4BFB6";
 })
 
 
