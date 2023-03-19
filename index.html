@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="basket" class="curtain flex-col center sans-font">
-      <a href="javascript:void(0)" class="closebtn grey">&times;</a>
-      <h2 class="stack-xl">Basket</h2>
-      <div id="basket-contents" class="flex-col center basket-space"></div>
-    </div>
-
     <nav class="flex-row fix-nav space-even sans-font">
       <div class="flex-row m-left">
         <h1 class="grey uppercase">soon_</h1>
@@ -21,12 +15,21 @@
       </div>
       <div
         class="flex-row m-right center space-even m-right alert-two"
-        style="width: 5rem"
+        style="width: 4rem"
       >
-        <a href="javascript:void(0)" id="cart" href="">cart</a>
+        <!-- <a href="javascript:void(0)" id="cart" href="">cart</a> -->
+        <img src="Img/icons8.png" id="cart">
         <output id="basket-count" class="flex-row center blue-circle text-s">0</output>
       </div>
     </nav>
+
+    <div id="basket" class="curtain flex-col center sans-font">
+      <a href="javascript:void(0)" class="closebtn grey">&times;</a>
+      <h2 class="stack-xl">Basket</h2>
+      <div id="basket-contents" class="flex-col center basket-space"></div>
+    </div>
+
+    
 
     <hr class="stack-xl" />
 
