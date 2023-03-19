@@ -110,14 +110,14 @@ console.log(productPrice)
 
 // Sliding basket functions
 function viewBasket() {
-  document.getElementById('basket').classList.add('curtain-width');
+  document.getElementById('basket').classList.add('slide-width');
   appendItemToBasket();
   appendProductPrice();
   basketTotal();
 }
 
 function closeBasket() {
-  document.getElementById('basket').classList.remove('curtain-width');
+  document.getElementById('basket').classList.remove('slide-width');
 }
 // End
 
