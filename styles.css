@@ -1,3 +1,13 @@
+/* CONTENTS 
+Flex..............flex properties
+Text..............
+Vertical Spacing..
+Margin............
+Button............
+Nav...............
+Sliding Basket....
+Web view..........media queries for desktop 
+*/
 
 /* Flex */
 .flex-row {
@@ -47,7 +57,6 @@ h1, h2, h3 {
 .uppercase {
 	text-transform: uppercase;
 }
-
 .text-xs {
 	font-size: x-small;
 }
@@ -55,11 +64,10 @@ h1, h2, h3 {
 	font-size: small;
 }
 .text-l {
-	font-size: 1.8rem;
+	font-size: xx-large;
 }
 
-
-/* Vertical spacing */
+/* Vertical Spacing */
 .stack-xl {
 	margin-top: 6rem;
 }
@@ -74,7 +82,6 @@ h1, h2, h3 {
 }
 .stack-none {
 }
-
 
 /* Margin */
 .m-left {
@@ -107,15 +114,6 @@ h1, h2, h3 {
 	border: 1px solid #3f51b5;
 	background-color: transparent;
 }
-#basket .closebtn {
-	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
-}
-#basket a {
-	text-decoration: none;
-}
 
 /* Nav */
 .fix-nav {
@@ -125,7 +123,7 @@ h1, h2, h3 {
 	background-color: white;
 }
 
-/* Sliding basket */
+/* Sliding Basket */
 .curtain {
 	height: 100vh;
 	width: 0;
@@ -146,6 +144,15 @@ h1, h2, h3 {
 .basket-space {
 	width: 100vw;
 	justify-content: space-evenly;
+}
+#basket .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+#basket a {
+	text-decoration: none;
 }
 
 /* Web view */

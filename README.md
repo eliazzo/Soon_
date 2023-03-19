@@ -1,6 +1,6 @@
 ## Soon_ Take-home Challenge
 
-This repo was created to showcase my response to *Flow 1* of the take-home challenge assigned by Soon_. Please read below to understand how I approached the task and the reasons behind the decisions I made.
+This repo was created to showcase my response to **User Flow 1** of the take-home challenge assigned by Soon_. Please read below to understand how I approached the task and the reasons behind the decisions I made.
 
 #### User Stories
 
@@ -18,7 +18,7 @@ Additionally, I want to:
 ### Process
 
 #### - Global variables
-I avoided hard coding product information onto the HTML file and created the global variables ``productPrice``, ``productText`` and ``productName`` to act as placeholders for the data. In what I appreciate is an enormously simplified version of the real thing, the idea was to maintain the possibility for alternative product information to be applied via the javascript file alone.
+I avoided hard coding product information onto the HTML file and created the global variables ``productPrice``, ``productText`` and ``productName`` to act as placeholders for the data. The idea was to maintain the possibility for alternative product information to be applied with minimal change to the codebase.
 
 #### - Mobile-first
 The Figma prototype shows a desktop view of the website page. However, I chose to follow a responsive, mobile-first approach given that this is ensures the app is accessible to as many different users as possible.
