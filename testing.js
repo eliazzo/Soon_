@@ -16,56 +16,56 @@ function test(name, testFunction) {
 }
 
 // Run tests 
-test("Select items to add to my basket", () => {
+test("increaseItem() increases display by 1 with each click", () => {
   // Mimic user actions
   increaseItem();
   // Test output is as expected
   const actual = document.getElementById('item-count').innerText;
-  equal(actual, '1');
+  equal(actual, '1', "item count increases by '1'");
   // Reverse test 
   decreaseItem();
 })
 
-test("Add items to my basket/ View the total number of items in my basket", () => { 
+test("addToBasket() adds item count value to basket count element", () => { 
   // Mimic user actions
   increaseItem();
   addToBasket();
   // Test output is as expected
   const actual = document.getElementById('basket-count').innerText;
-  equal(actual, '1');
+  equal(actual, '1', "basket-count shows '1'");
   // Reverse test
   decreaseItem();
   addToBasket();
 })
 
-test("View my basket", () => {
+test("viewBasket() changes CSS width property to make basket visible", () => {
   // Mimic user actions
   viewBasket();
   // Test output is as expected
   const basket = document.getElementById('basket');
   const basketClass = basket.getAttribute('class');
-  const actual = basketClass.includes('curtain-width');
-  equal(actual, true);
+  const actual = basketClass.includes('slide-width');
+  equal(actual, true, 'slide-width class is added to basket');
   // Reverse test
   closeBasket();
 })
 
-test("View the total price in my basket", () => {
-  // Mimic user actions
-  increaseItem();
-  addToBasket();
-  viewBasket();
+test("BasketTotal() multiplies number of items by price", () => {
+  // Call basketTotal function with test values
+  basketTotal(2,3);
+  const actual = document.getElementById('basket-sum').innerText;
   // Test output is as expected
-  actual = document.getElementById('basket-sum').innerText;
-  equal(actual, '£650.00');
-  // Reverse test
-  closeBasket();
-  decreaseItem();
-  addToBasket();
+  equal(actual, '£6.00');
+  // Reset basket sub-total
+  basketTotal(0,0);
+})
+
+function resetGrey(){
   const basketCount = document.getElementById('basket-count');
   basketCount.style.backgroundColor = "#C4BFB6";
-})
+}
 
+resetGrey();
 
 
 

@@ -5,24 +5,23 @@ let productText = "The Drumming jacket in orange is finished with a water-repell
 let productName = 'Haxed wotton jooded cacket';
 
 // Add product information
-function appendProductName() {
-  document.getElementById('product-name').innerText = productName;
+function appendProductName(name) {
+  document.getElementById('product-name').innerText = name;
 };
 
-appendProductName()
+appendProductName(productName)
 
 function appendProductPrice() { 
-  const price = '£' + productPrice.toFixed(2);
-  document.getElementById('product-price').innerText = price;
+  document.getElementById('product-price').innerText = '£' + productPrice.toFixed(2);
 };
 
 appendProductPrice(); 
 
-function appendProductText() {
-  document.getElementById('product-info').innerText = productText;
+function appendProductText(text) {
+  document.getElementById('product-info').innerText = text;
 };
 
-appendProductText(); 
+appendProductText(productText); 
 // End
 
 // Alert functions
@@ -64,17 +63,16 @@ function decreaseItem() {
 };
 
 function addToBasket() {
-  const basketCount = document.getElementById('basket-count');
   const countDisplay = document.getElementById('item-count');
+  const basketCount = document.getElementById('basket-count');
   basketCount.innerText = countDisplay.innerText;
   basketCount.style.backgroundColor = "#3f51b5";
   alertTwo();
 };
 
-function basketTotal() {
+function basketTotal(num, price) {
   const displayBasketSum = document.getElementById('basket-sum');
-  const basketCount = document.getElementById('basket-count').innerText;
-  const basketSum = Number(basketCount) * productPrice;
+  const basketSum = num * price;
   displayBasketSum.innerText = '£' + basketSum.toFixed(2);
 };
 
@@ -106,14 +104,14 @@ function appendItemToBasket() {
     <p id="basket-sum">£</p>
   `
 }
-console.log(productPrice)
 
 // Sliding basket functions
 function viewBasket() {
   document.getElementById('basket').classList.add('slide-width');
   appendItemToBasket();
   appendProductPrice();
-  basketTotal();
+  const basketCount = document.getElementById('basket-count').innerText;
+  basketTotal(basketCount, productPrice);
 }
 
 function closeBasket() {
