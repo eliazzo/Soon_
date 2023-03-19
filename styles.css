@@ -1,7 +1,7 @@
 /* CONTENTS 
 Flex..............flex properties
-Text..............
-Vertical Spacing..
+Text..............text styling
+Stack.............vertical spacing
 Margin............
 Button............
 Nav...............
@@ -67,7 +67,7 @@ h1, h2, h3 {
 	font-size: xx-large;
 }
 
-/* Vertical Spacing */
+/* Stack */
 .stack-xl {
 	margin-top: 6rem;
 }
@@ -124,7 +124,7 @@ h1, h2, h3 {
 }
 
 /* Sliding Basket */
-.curtain {
+.slide {
 	height: 100vh;
 	width: 0;
 	position: fixed;
@@ -135,7 +135,7 @@ h1, h2, h3 {
 	overflow-x: hidden;
 	transition: 0.5s;
 }
-.curtain-width {
+.slide-width {
 	width: 100%;
 }
 .text-width {
@@ -170,7 +170,7 @@ h1, h2, h3 {
 	.stack-none {
 		margin-top: 0.5rem;
 	}
-	.curtain-width {
+	.slide-width {
 		width: 50%;
 	}
 	.text-width {

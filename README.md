@@ -26,11 +26,8 @@ The Figma prototype shows a desktop view of the website page. However, I chose t
 #### - Alert notice
 The alert functions are designed to guide reviewers through the page and clarify the intended user flow. For example, when you exeed the maximum number of items that can be added to the bag, you are guided to the ``Add to basket`` button.
 
-#### - Sliding basket
-The challenge instructions clearly stated that we do not attempt to complete all the user flows. However, after looking at the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794) I was interested in the sliding basket and keen to integrate this into my project. 
-
-#### - Fixed nav
-Similarly, I chose to recreate the fixed navigation bar that appears on the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794).
+#### - Sliding basket / Fixed navigation bar
+The challenge instructions clearly stated that we do not attempt to complete all the user flows. However, after looking at the [Mackintosh wesbite](https://www.mackintosh.com/ad/shopping/drumming-orange-dry-waxed-cotton-hooded-jacket-gmm-200-15481794) I was interested in the sliding basket and keen to integrate this into my project. I also wanted to recreate the fixed navigation bar that appears on the website.
 
 #### - Testing
 
