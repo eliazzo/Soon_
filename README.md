@@ -31,7 +31,7 @@ The challenge instructions clearly stated that we do not attempt to complete all
 
 #### - Testing
 
-A testing library was developed to test that each user story is met. Test results are shown in the console.
+We have recently covered the Test Driven Development (TDD) method at FAC. Time constraints prevented me from applying it to the entire project, however the iterative process of writing the tests is highly valuable and I was able to test that the key user stories were met. Test results are shown in the console.
 
 #### Instructions for reviewing
 
