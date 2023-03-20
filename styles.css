@@ -2,182 +2,184 @@
 Flex..............flex properties
 Text..............text styling
 Stack.............vertical spacing
-Margin............
-Button............
-Nav...............
-Sliding Basket....
+Margin............horizontal spacing
+Button............main buttons
+Nav...............nav bar elements
+Sliding Basket....basket elements
 Web view..........media queries for desktop 
 */
 
 /* Flex */
 .flex-row {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .flex-col {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .flex-col-sp {
-	display: flex;
-	flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 .center {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .center-text {
-	text-align: center;
+  text-align: center;
 }
 .space-even {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 .flex-1 {
-	flex: 1;
+  flex: 1;
 }
 .justify-left {
-	justify-content: left;
+  justify-content: left;
 }
 .justify-right {
-	justify-content: right;
+  justify-content: right;
 }
 
 /* Text */
-h1, h2, h3 {
-	font-weight: 100;
+h1,
+h2,
+h3 {
+  font-weight: 100;
 }
 .sans-font {
-	font-family: sans-serif;
-	font-weight: lighter;
-	line-height: 1.5rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+  line-height: 1.5rem;
 }
 .grey {
-	color: #9a9ea2;
+  color: #9a9ea2;
 }
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .text-xs {
-	font-size: x-small;
+  font-size: x-small;
 }
 .text-s {
-	font-size: small;
+  font-size: small;
 }
 .text-l {
-	font-size: xx-large;
+  font-size: xx-large;
 }
 
 /* Stack */
 .stack-xl {
-	margin-top: 6rem;
+  margin-top: 6rem;
 }
 .stack-l {
-	margin-top: 4rem;
+  margin-top: 4rem;
 }
 .stack-m {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 .stack-s {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 .stack-none {
 }
 
 /* Margin */
 .m-left {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 .m-right {
-	margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 /* Button */
 .blue-circle {
-	color: white;
-	background-color: #3f51b5;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+  color: white;
+  background-color: #3f51b5;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .blue-long {
-	color: white;
-	background-color: #3f51b5;
-	width: 150px;
-	height: 30px;
-	border-radius: 40px;
-	border: none;
+  color: white;
+  background-color: #3f51b5;
+  width: 150px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
 }
 .blue-circle-border {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 1px solid #3f51b5;
-	background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #3f51b5;
+  background-color: transparent;
 }
 
 /* Nav */
 .fix-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 /* Sliding Basket */
 .slide {
-	height: 100vh;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	right: 0;
-	top: 0;
-	background: white;
-	overflow-x: hidden;
-	transition: 0.5s;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background: white;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 .slide-width {
-	width: 100%;
+  width: 100%;
 }
 .text-width {
-	width: 80%;
+  width: 80%;
 }
 .basket-space {
-	width: 100vw;
-	justify-content: space-evenly;
+  width: 100vw;
+  justify-content: space-evenly;
 }
 #basket .closebtn {
-	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 #basket a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* Web view */
 @media only screen and (min-width: 800px) {
-	.flex-col-sp {
-		display: flex;
-		flex-direction: row;
-	}
-	.m-left {
-		margin-left: 4rem;
-	}
-	.m-right {
-		margin-right: 4rem;
-	}
-	.stack-none {
-		margin-top: 0.5rem;
-	}
-	.slide-width {
-		width: 50%;
-	}
-	.text-width {
-		width: 25%;
-	}
-	#main-img img {
-		width: 587px;
-		height: 784px;
-	}
+  .flex-col-sp {
+    display: flex;
+    flex-direction: row;
+  }
+  .m-left {
+    margin-left: 4rem;
+  }
+  .m-right {
+    margin-right: 4rem;
+  }
+  .stack-none {
+    margin-top: 0.5rem;
+  }
+  .slide-width {
+    width: 50%;
+  }
+  .text-width {
+    width: 25%;
+  }
+  #main-img img {
+    width: 587px;
+    height: 784px;
+  }
 }
