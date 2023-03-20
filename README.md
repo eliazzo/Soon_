@@ -36,8 +36,10 @@ We have recently covered the Test Driven Development (TDD) method at FAC. Time c
 #### Instructions for reviewing
 
 Clone the repo using the following command: 
-
 ``git clone https://github.com/eliazzo/Soon_ main``
+
+The live site can be accessed via:
+[https://eliazzo.github.io/Soon_/](https://eliazzo.github.io/Soon_/)
 
 
 See my workflow on [GitHub Projects](https://github.com/users/eliazzo/projects/2).
